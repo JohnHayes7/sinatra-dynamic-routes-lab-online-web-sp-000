@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   get '/say/:number/:phase' do
     @number = params[:number].to_i
-    "#{@number}"
+    @number.times{"#{params[:phrase]}"}
   end
   
   
