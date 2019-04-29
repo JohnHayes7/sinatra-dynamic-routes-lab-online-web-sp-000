@@ -10,5 +10,8 @@ class App < Sinatra::Base
   get '/square/:number' do
     "#{Math.sqrt(params[:number].to_i).to_s}"
   end
+  
+  get 'say/:number/:phrase' do
+    do
 
 end
