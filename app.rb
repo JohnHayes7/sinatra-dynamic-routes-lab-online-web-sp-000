@@ -18,7 +18,7 @@ class App < Sinatra::Base
       result += params[:phrase]
       i +=1 
       end
-      
+    result
   end
   
   
