@@ -24,13 +24,13 @@ class App < Sinatra::Base
       "#{params[:number1].to_f + params[:number2].to_f}"
     
     elsif params[:operation] == "subtract"
-      "#{params[:number1] - params[:number2]}"
+      "#{params[:number1].to_f - params[:number2].to_f}"
       
     elsif params[:operation] == "multiply"
-      "#{params[:number1] * params[:number2]}"
+      "#{params[:number1].to_f * params[:number2].to_f}"
       
     elsif params[:operation] == "divide"
-      "#{params[:number1] / params[:number2]}"
+      "#{params[:number1].to_f / params[:number2].to_f}"
     end
   end
   
