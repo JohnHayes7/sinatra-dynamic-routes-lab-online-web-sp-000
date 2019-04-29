@@ -12,7 +12,8 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phase' do
-    "Hello Losers"
+    @number = params[:number].to_i
+    puts "#{@number}"
   end
   
   
