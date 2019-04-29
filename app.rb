@@ -11,7 +11,7 @@ class App < Sinatra::Base
     "#{params[:number].to_i * params[:number].to_i}"
   end
   
-  get '/say/:number/:phase' do
+  get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @number.times{"#{params[:phrase]}"}
   end
